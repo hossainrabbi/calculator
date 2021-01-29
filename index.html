@@ -12,17 +12,18 @@
         <thead>
           <th class="input-output" colspan="4">
             <input
+              id="input"
               style="font-size: 15px"
               type="text"
               placeholder="0"
               readonly
             />
             <br />
-            <input style="font-size: 20px" type="text" readonly />
+            <input id="answer" style="font-size: 20px" type="text" readonly />
           </th>
         </thead>
         <tr>
-          <td><input type="button" onclick="clearInput()" value="CE" /></td>
+          <td><input type="button" onclick="clearInput()" value="C" /></td>
           <td>
             <input type="button" onclick="getOperator('/')" value="&#xf7;" />
           </td>
@@ -51,12 +52,12 @@
         </tr>
         <tr>
           <td>
-            <input type="button" onclick="getOperator('+/-')" value="+/-" />
+            <input type="button" onclick="getOperator('.')" value="." />
           </td>
           <td><input type="button" onclick="getNumber(0)" value="0" /></td>
           <td colspan="2">
             <input
-              style="width: 124px"
+              style="width: 123px"
               type="button"
               onclick="comparison()"
               value="="
