@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <table class="calculator">
+        <thead>
+          <th class="input-output" colspan="4">
+            <input
+              style="font-size: 15px"
+              type="text"
+              placeholder="0"
+              readonly
+            />
+            <br />
+            <input style="font-size: 20px" type="text" readonly />
+          </th>
+        </thead>
+        <tr>
+          <td><input type="button" onclick="clearInput()" value="CE" /></td>
+          <td>
+            <input type="button" onclick="getOperator('/')" value="&#xf7;" />
+          </td>
+          <td><input type="button" onclick="getOperator('*')" value="x" /></td>
+          <td>
+            <input type="button" onclick="backspace()" value="&#x2190;" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" onclick="getNumber(7)" value="7" /></td>
+          <td><input type="button" onclick="getNumber(8)" value="8" /></td>
+          <td><input type="button" onclick="getNumber(9)" value="9" /></td>
+          <td><input type="button" onclick="getOperator('+')" value="+" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" onclick="getNumber(4)" value="4" /></td>
+          <td><input type="button" onclick="getNumber(5)" value="5" /></td>
+          <td><input type="button" onclick="getNumber(6)" value="6" /></td>
+          <td><input type="button" onclick="getOperator('-')" value="-" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" onclick="getNumber(1)" value="1" /></td>
+          <td><input type="button" onclick="getNumber(2)" value="2" /></td>
+          <td><input type="button" onclick="getNumber(3)" value="3" /></td>
+          <td><input type="button" onclick="brackets()" value="( )" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="getOperator('+/-')" value="+/-" />
+          </td>
+          <td><input type="button" onclick="getNumber(0)" value="0" /></td>
+          <td colspan="2">
+            <input
+              style="width: 124px"
+              type="button"
+              onclick="comparison()"
+              value="="
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
